@@ -49,7 +49,7 @@ const App = () => {
       <h1>Books List</h1>
       {/* this is the one part  sort key  */}
            <label htmlFor='sort' >Sort by:
-      <select id="sort by" onChange={(e) => { (setSortKey(e.target.value)) }} >
+      <select id="sort" onChange={(e) => { (setSortKey(e.target.value)) }} >
         <option value="title">Title</option>
         <option value="authors">Author</option>
         <option value="subtitle">Publisher</option>
@@ -58,8 +58,8 @@ const App = () => {
 
 
       {/* this is the part 2nf assecnding order or decensdign order  */}
-      <label htmlFor='order' >Order:
-      <select id="order" onChange={(e) => { (setSortOrder(e.target.value)) }} >
+      <label htmlFor='orderBy' >Order:
+      <select id="orderBy" onChange={(e) => { (setSortOrder(e.target.value)) }} >
         <option value="asc">Ascending</option>
         <option value="dsc">Descending</option>
       </select>
@@ -81,8 +81,7 @@ const App = () => {
     <td>{book.title}</td>
     <td>{book.authors}</td>
     <td>{book.subtitle}</td>
-    <td><img src={book.image}/></td>
-
+    {/* <td><img src={book.image}/></td> */}
        <td>{book.id}</td>
   </tr>
 ))}
