@@ -71,7 +71,6 @@ const App = () => {
   <th>Title</th>
   <th>Author</th>
   <th>Publisher</th>
-  <th>Publisher</th>
     <th>ISBN</th>
 </tr>
 </thead>
